@@ -55,6 +55,7 @@ public class MenuView {
 
                 case 4: {
                     entregaView.gerarEntrega();
+                    break;
                 }
 
                 case 0: {
