@@ -16,7 +16,7 @@ public class PedidoView {
     PedidoDAO pedidoDAO = new PedidoDAO();
 
     public void criarPedido() {
-        System.out.println("\n--------Criar Pedido--------\n");
+        System.out.println("\n\n--------Criar Pedido--------\n\n");
 
         DateUtils.listarTodosClientes();
 

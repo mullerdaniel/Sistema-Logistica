@@ -9,28 +9,28 @@ public class Entrega {
     private int motorista_id;
     private LocalDateTime data_saida;
     private LocalDateTime data_entrega;
-    private String statuc;  // ('EM_ROTA', 'ENTREGUE', 'ATRASADA')
+    private String status;  // ('EM_ROTA', 'ENTREGUE', 'ATRASADA')
 
 
     // METODO CONSTRUTOR COM ID E E SEM ID
 
     //COM ID
-    public Entrega(int id, int pedido_id, int motorista_id, LocalDateTime data_saida, LocalDateTime data_entrega, String statuc) {
+    public Entrega(int id, int pedido_id, int motorista_id, LocalDateTime data_saida, LocalDateTime data_entrega, String status) {
         this.id = id;
         this.pedido_id = pedido_id;
         this.motorista_id = motorista_id;
         this.data_saida = data_saida;
         this.data_entrega = data_entrega;
-        this.statuc = statuc;
+        this.status = status;
     }
 
     // SEM ID
-    public Entrega(int pedido_id, int motorista_id, LocalDateTime data_saida, LocalDateTime data_entrega, String statuc) {
+    public Entrega(int pedido_id, int motorista_id, LocalDateTime data_saida, LocalDateTime data_entrega, String status) {
         this.pedido_id = pedido_id;
         this.motorista_id = motorista_id;
         this.data_saida = data_saida;
         this.data_entrega = data_entrega;
-        this.statuc = statuc;
+        this.status = status;
     }
 
 
@@ -75,11 +75,11 @@ public class Entrega {
         this.data_entrega = data_entrega;
     }
 
-    public String getStatuc() {
-        return statuc;
+    public String getStatus() {
+        return status;
     }
 
-    public void setStatuc(String statuc) {
-        this.statuc = statuc;
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

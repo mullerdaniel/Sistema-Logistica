@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class MenuView {
     Scanner input = new Scanner(System.in);
+
     ClienteView clienteView = new ClienteView();
     MotoristaView motoristaView = new MotoristaView();
     PedidoView pedidoView = new PedidoView();
+    EntregaView entregaView = new EntregaView();
 
     public void exibirMenu() {
         int opcao;
@@ -49,6 +51,10 @@ public class MenuView {
                 case 3: {
                     pedidoView.criarPedido();
                     break;
+                }
+
+                case 4: {
+                    entregaView.gerarEntrega();
                 }
 
                 case 0: {

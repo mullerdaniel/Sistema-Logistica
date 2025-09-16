@@ -11,7 +11,7 @@ public class ClienteView {
 
     // CADASTRAR CLIENTE
     public void cadastrarCliente() {
-        System.out.println("\n--------Cadastrar Cliente--------\n");
+        System.out.println("\n\n--------Cadastrar Cliente--------\n\n");
 
         System.out.print("Nome: ");
         String nome = input.nextLine();

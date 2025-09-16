@@ -11,7 +11,7 @@ public class MotoristaView {
 
     // CADASTRAR MOTORISTAS
     public void cadastrarMotorista() {
-        System.out.println("\n--------Cadastrar Motorista--------\n");
+        System.out.println("\n\n--------Cadastrar Motorista--------\n\n");
 
         System.out.print("Nome: ");
         String nome = input.nextLine();
