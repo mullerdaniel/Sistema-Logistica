@@ -4,6 +4,7 @@ import org.example.Dao.EntregaDAO;
 import org.example.Dao.PedidoDAO;
 import org.example.Utils.DateUtils;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class MenuView {
@@ -76,6 +77,51 @@ public class MenuView {
 
                 case 7: {
                     DateUtils.listarEntregasComClienteEMotorista();
+                    break;
+                }
+
+                case 8: {
+                    DateUtils.relatorioTotalEntregasPorMotorista();
+                    break;
+                }
+
+                case 9: {
+                    DateUtils.relatorioClientesMaiorVolume();
+                    break;
+                }
+
+                case 10: {
+                    DateUtils.relatorioPedidosPendentesPorEstado();
+                    break;
+                }
+
+                case 11: {
+                    DateUtils.relatorioEntregasAtrasadasPorCidade();
+                    break;
+                }
+
+                case 12: {
+                    DateUtils.buscarPedidoPorCpfouCnpj();
+                    break;
+                }
+
+                case 13: {
+                    DateUtils.cancelarPedido();
+                    break;
+                }
+
+                case 14: {
+                    DateUtils.excluirEntregaComValidacao();
+                    break;
+                }
+
+                case 15: {
+                    DateUtils.excluirClienteComVerificacao();
+                    break;
+                }
+
+                case 16: {
+                    DateUtils.excluirMotoristaComVerificacao();
                     break;
                 }
 
